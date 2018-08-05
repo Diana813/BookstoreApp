@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_margin"
+    tools:context=".DetailActivity">
+
+    <TableRow style="@style/TableRowStyle">
+
+        <TextView
+            android:id="@+id/product_name"
+            style="@style/OverviewStyle"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:hint="@string/book_title" />
+
+        <TextView
+            android:id="@+id/edit_book_name"
+            style="@style/EditTextFieldStyle"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="@string/hint_book_title" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <TableRow style="@style/TableRowStyle">
+
+        <TextView
+            android:id="@+id/product_price"
+            style="@style/OverviewStyle"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:hint="@string/book_price" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/edit_book_price"
+                style="@style/EditTextFieldStyle"
+                android:hint="@string/hint_book_price" />
+
+            <TextView
+                android:id="@+id/currency"
+                style="@style/CurrencyTextViewStyle"
+                tools:text="@string/currency" />
+        </RelativeLayout>
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <TableRow style="@style/TableRowStyle">
+
+        <TextView
+            android:id="@+id/product_quantity"
+            style="@style/OverviewStyle"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:hint="@string/book_quantity" />
+
+        <TextView
+            android:id="@+id/edit_book_quantity"
+            style="@style/EditTextFieldStyle"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="@string/hint_book_quantity" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <TableRow style="@style/TableRowStyle">
+
+        <TextView
+            android:id="@+id/supplier_name"
+            style="@style/OverviewStyle"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:hint="@string/supplier_name" />
+        <!-- Supplier name field -->
+        <TextView
+            android:id="@+id/edit_supplier_name"
+            style="@style/EditTextFieldStyle"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:hint="@string/hint_supplier_name" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <TableRow style="@style/TableRowStyle">
+
+        <TextView
+            android:id="@+id/supplier_phone"
+            style="@style/OverviewStyle"
+            android:layout_width="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:hint="@string/supplier_phone_number" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/edit_supplier_phone"
+                style="@style/EditTextFieldStyle"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/fab"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_supplier_phone_number" />
+
+            <android.support.design.widget.FloatingActionButton
+                app:backgroundTint="#fff"
+                android:id="@+id/fab"
+                android:layout_width="@dimen/design_fab_image_size"
+                android:layout_height="@dimen/design_fab_image_size"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/phone"
+                tools:ignore="PrivateResource" />
+
+        </RelativeLayout>
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray"
+        />
+</TableLayout>
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height= "wrap_content"
+        android:id="@+id/label"
+        android:background="@color/TableColor"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="1dp"
+            android:id="@+id/row">
+
+            <TextView
+                style="@style/CatalogTextViewLabelStyle"
+                android:id="@+id/title_label"
+                android:text="@string/Title"
+                />
+            <TextView
+                style="@style/CatalogTextViewLabelStyle"
+                android:id="@+id/price_label"
+                android:text="@string/Price"
+                />
+            <TextView
+                style="@style/CatalogTextViewLabelStyle"
+                android:id="@+id/quantity_label"
+                android:text="@string/Quantity"
+                />
+            <TextView
+                style="@style/CatalogTextViewLabelStyle"
+                android:id="@+id/sale_label"
+                android:text="@string/Sale"
+                />
+        </LinearLayout>
+    </TableLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/design_fab_image_size"
+        android:layout_height="@dimen/design_fab_image_size"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/book"
+        app:backgroundTint="#fff"
+        />
+
+
+        <ListView
+            android:id="@+id/list_of_books"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/label">
+        </ListView>
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/empty_shelf_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_empty_shelf" />
+
+        <TextView
+            style="@style/EmptyViewTextStyle"
+            android:id="@+id/empty_title_text"
+            android:layout_below="@+id/empty_shelf_image"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="16dp"
+            android:text="@string/empty_view_title"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            style="@style/EmptyViewTextStyle"
+            android:id="@+id/empty_subtitle_text"
+            android:layout_below="@+id/empty_title_text"
+            android:fontFamily="sans-serif"
+            android:paddingTop="8dp"
+            android:text="@string/empty_view_subtitle"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#A2AAB0" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

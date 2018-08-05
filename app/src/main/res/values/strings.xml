@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">Bookstore App</string>
+    <!-- Title for the activity to add a new book  -->
+    <string name="add_a_book_editor_activity_label">Add a Book</string>
+
+    <!-- Label for editor menu option to save book and leave editor  -->
+    <string name="save_book">Save</string>
+
+    <!-- Text hint for product name field in the editor -->
+    <string name="hint_book_title">Title</string>
+
+    <!-- Text hint for price field in the editor -->
+    <string name="hint_book_price">Price</string>
+
+    <!-- Text hint for quantity field in the editor -->
+    <string name="hint_book_quantity">Quantity</string>
+
+    <!-- Text quantity in catalog-->
+    <string name="quantity">Quantity:</string>
+
+    <!-- Text hint for supplier name field in the editor -->
+    <string name="hint_supplier_name">Supplier Name</string>
+
+    <!-- Text hint for supplier phone number field in the editor -->
+    <string name="hint_supplier_phone_number">Supplier Phone Number</string>
+
+    <string name="currency">pln</string>
+
+    <string name="delete_all">Delete all books</string>
+
+    <!-- Text for the empty view, which describes the empty bookshelf image-->
+    <string name="empty_view_title">The shelf is empty...:(</string>
+
+    <!-- Asking the user to add a book [CHAR LIMIT=50]+ -->
+    <string name="empty_view_subtitle">Add a book</string>
+
+    <!-- Title for the activity to edit a new book -->
+    <string name="edit_book_editor_activity_label">Edit book</string>
+
+    <!-- Toast message in editor when new book has failed to be inserted -->
+    <string name="editor_insert_book_error">Error with saving book</string>
+
+    <!-- Toast message in editor when new book has been successfully saved-->
+    <string name="editor_book_saved">Book saved</string>
+
+    <!-- Toast message in editor when new book has been successfully edidted-->
+    <string name="editor_book_edited">Book edited</string>
+
+    <!-- Toast message in editor when new book has failed to be edited  -->
+    <string name="editor_edit_book_error">Error with editing book</string>
+
+    <!-- Label for editor menu option that deletes one book  -->
+    <string name="delete_a_book">Delete</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current book -->
+    <string name="delete_dialog_message">Delete this book?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current book -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current book -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Toast message in editor when current book was successfully deleted  -->
+    <string name="editor_book_deleted">Book deleted</string>
+
+    <!-- Toast message in editor when current book has failed to be deleted  -->
+    <string name="editor_delete_book_error">Error with deleting book</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes -->
+    <string name="unsaved_changes_dialog_message">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a user's changes  -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current book  -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Table label for book title-->
+    <string name="Title">Title</string>
+
+    <!-- Table label for book price-->
+    <string name="Price">Price</string>
+
+    <!-- Table label for book quantity-->
+    <string name="Quantity">Quantity</string>
+
+    <!-- Table label for sale button-->
+    <string name="Sale">Sale</string>
+
+    <!-- Toast message if the quantity of books is lower than 0-->
+    <string name="lower_than_0_warning">Quantity cannot be lower than zero</string>
+
+    <!-- Details menu option for going back to the list of books-->
+    <string name="Back_to_the_list">Go back to the book list</string>
+
+    <!-- Details menu option for going to the editor activity-->
+    <string name="Edit">Edit</string>
+
+    <!-- Details activity label-->
+    <string name="details_activity_label">Book details</string>
+
+    <!-- Text for product name field in the details activity -->
+    <string name="book_title">Title:</string>
+
+    <!-- Text for price field in the details activity -->
+    <string name="book_price">Price:</string>
+
+    <!-- Text for quantity field in the details activity -->
+    <string name="book_quantity">Quantity</string>
+
+    <!-- Text for supplier name field in the details activity-->
+    <string name="supplier_name">Supplier Name</string>
+
+    <!-- Text for supplier phone number field in the details activity -->
+    <string name="supplier_phone_number">Supplier Phone Number</string>
+
+    <!--Delate all books warning-->
+    <string name="delete_all_dialog_message">Delete all books?</string>
+
+    <!--No title alert-->
+    <string name="No_title">Book requires a title</string>
+
+    <!--No price alert-->
+    <string name="No_price">Book requires a price</string>
+
+    <!--No supplier name alert-->
+    <string name="No_supplier">Supplier name is required</string>
+
+    <!--No supplier phone alert-->
+    <string name="No_phone">Supplier phone is required</string>
+
+    <!-- Confirmation dialog when the user leaves an empty field-->
+    <string name="Empty_field">Fill in all fields</string>
+
+</resources>

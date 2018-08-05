@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Common margin value used throughout the app -->
+    <dimen name="activity_margin">16dp</dimen>
+
+    <!-- Size of the image inside the floating button -->
+    <dimen name="design_fab_image_size" tools:override="true">45dp</dimen>
+
+    <!-- Margin between text views in list item-->
+    <dimen name="text_view_margins">5dp</dimen>
+</resources>

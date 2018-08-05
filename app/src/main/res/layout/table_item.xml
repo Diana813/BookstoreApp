@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/list_of_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/book_title"
+            style="@style/TableTextViews"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="Princess Snow White" />
+
+        <LinearLayout
+            style="@style/TableTextViews"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_margin">
+
+            <TextView
+                android:id="@+id/price"
+                style="@style/TableTextViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="12" />
+
+            <TextView
+                android:id="@+id/currency"
+                style="@style/TableTextViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text=" pln" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quantity"
+            style="@style/TableTextViews"
+            android:layout_marginLeft="@dimen/text_view_margins"
+            android:padding="@dimen/activity_margin"
+            tools:text="456"
+            />
+
+        <LinearLayout
+            style="@style/TableTextViews">
+        <ImageButton
+            android:id="@+id/quantityButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/minus"
+            android:layout_gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</TableLayout>
+

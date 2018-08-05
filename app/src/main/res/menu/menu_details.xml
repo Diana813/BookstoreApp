@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/back_to_book_list"
+        android:title="@string/Back_to_the_list"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/go_to_editor"
+        android:title="@string/Edit"
+        app:showAsAction="never" />
+
+
+</menu>
